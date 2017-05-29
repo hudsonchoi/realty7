@@ -1,0 +1,62 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="뉴저지 부동산, 뉴저지,부동산,new jersey,real estate,real,estate,agent,rent,home,house,apartment,bergen county" />
+    <meta name="description" content="뉴저지 부동산 전문인 Realty 7 New Jersey real estate agent house apartment Bergen county" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")   
+    <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/bootstrap/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/swfobject.js"></script>
+    <style>
+        html { height: 100%; overflow: hidden; }
+        #intro { height: 100%; }
+        body { height: 100%; margin: 0px; padding: 0px; background-color: #d7e6f8; }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $("#intro").hide();
+            } else {
+                $("#mobile").hide();
+            }
+        });
+</script>
+</head>
+
+<body>
+    <div class="row" id="mobile" >
+         <div class="col-md-12" style="text-align:center; padding:20px 0px">
+             <img src="~/Content/images/SplashLogo.png" />
+         </div>
+         <div class="col-md-12" style="text-align:center;padding:20px 0px">
+             <div style="margin-bottom:5px"><a href="/kor">한국어를 원하시면 클릭하세요</a></div>
+             <div><a href="/kor"><img src="~/Content/images/Korean.png"/></a></div>
+         </div>
+         <div class="col-md-12" style="text-align:center;padding:20px 0px">
+             <div style="margin-bottom:5px"><a href="/eng">Please click here for English</a></div>
+             <div><a href="/eng"><img src="~/Content/images/English.png"/></a></div>
+         </div>
+    </div>
+
+    <div id="intro"></div>
+	    <script type="text/javascript">
+		    //var intro = new SWFObject("<?=FLASH?>intro.swf", "intro", "820", "474", "7", "#ffffff");
+		    var intro = new SWFObject("/Content/flash/intro.swf", "intro", "100%", "100%", "7", "#ffffff");
+		    intro.addParam("scale", "exactfit");
+		    intro.addVariable("korean","kor/");
+		    intro.addVariable("english","eng/");
+		    intro.write("intro");
+	    </script>
+</body>
+</html>

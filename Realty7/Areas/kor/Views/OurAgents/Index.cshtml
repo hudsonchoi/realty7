@@ -1,0 +1,110 @@
+﻿@model Realty7.Models.AgentViewModel
+@{
+    ViewBag.Title = "Realty 7 LLC :: Our Agents";
+    Layout = "~/Views/Shared/_LayoutKor.cshtml";
+}
+@using PagedList.Mvc;
+@using PagedList;
+@{                    
+    PagedListRenderOptions option = new PagedListRenderOptions();
+    option.Display = PagedListDisplayMode.IfNeeded;
+}
+<script type="text/javascript">
+    $(function () {
+        $("#our-agents").addClass("active");
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $("#banner").hide();
+            $("#pc-menu").hide();
+            $("#pc-menu2").hide();
+            $("div.photoBorder > div > div:nth-child(2)").addClass("contactMobileDiv");
+            $("#mobile-banner").show();
+        } else {
+            $("#mobile-banner").hide();
+            $("div.photoBorder > div > div:nth-child(2)").addClass("contactDiv");
+        }
+    });
+
+
+</script>
+<style>
+#mobile-banner {
+    width: 100%;
+    height: auto;
+}
+</style>
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+<embed name="banner" width="940" height="229" id="banner" src="/Content/flash/banner.swf" type="application/x-shockwave-flash" wmode="transparent" quality="high" bgcolor="#ffffff"/>
+<img id="mobile-banner" src="~/Content/images/bannerHome.png" style="display:none"/>
+      <div class="row">
+        <div class="col-md-3" style="text-align:center;margin-top:10px" id="pc-menu">
+            <div class="side-menu"><img src="~/Content/images/kor/agents.png" /></div>
+       </div>
+        <div class="col-md-9">
+            
+            <div class="col-md-6" style="margin-top:10px">
+                <b>Realty 7 LLC (Fort Lee Office)</b><br />
+                2160 North Central Rd. Suite 207<br />
+                Fort Lee, NJ 07024<br />
+                Office: 201-292-7777<br />
+                Fax: 201-482-0423<br />
+                Email: jamesleerealty7@gmail.com
+            </div>                
+        </div>
+       <div class="col-md-3" id="pc-menu2">
+            &nbsp;
+       </div>
+        <div class="col-md-9">
+            <div class="col-md-12">
+               <div class="col-md-6">
+                     @if (Model.Agents != null)
+                    {
+                        @Html.PagedListPager((IPagedList)Model.Agents, page => Url.Action("Index", "OurAgents", new { page, sort = Model.Sort }), option)
+                    }
+                </div>
+                <div class="col-md-6" style="margin-top:10px">
+                     <b>Sort by:</b>
+                    <span class="sortCmd" style="display:@(Model.Sort == "d" ? "none" : "inline")">@Html.ActionLink("Default", "Index", new { page = 1, sort = "d" })</span> 
+                    <span class="sortCmd" style="display:@(Model.Sort == "d" ? "inline" : "none")">Default</span> 
+                    <span class="sortCmd" style="display:@(Model.Sort == "l" ? "none" : "inline")">@Html.ActionLink("Last name", "Index", new { page = 1, sort = "l" })</span> 
+                    <span class="sortCmd" style="display:@(Model.Sort == "l" ? "inline" : "none")">Last name</span> 
+                    <span class="sortCmd" style="display:@(Model.Sort == "f" ? "none" : "inline")">@Html.ActionLink("First name", "Index", new { page = 1, sort = "f" })</span> 
+                    <span class="sortCmd" style="display:@(Model.Sort == "f" ? "inline" : "none")">First name</span> 
+                </div>               
+            </div>
+
+            @foreach (var a in Model.Agents)
+            {
+                 <div class="col-md-6 photoBorder">
+                    <div style="clear:both; min-height:128px; min-width:350px">
+                        <div class="imgDiv" style="margin-bottom:-10px">
+                            <img src="~/Content/images/agents/@a.Image" onerror="this.onerror=null;this.src='/Content/images/agents/noimage.jpg'" />
+                        </div>
+                        <div>
+                            <b>@a.FirstName @a.LastName</b><br />
+                            Cell: @a.Cell<br />
+                            Email: <a href="mailto:@a.Email">@a.Email</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <div class="col-md-12">
+               <div class="col-md-6">
+                     @if (Model.Agents != null)
+                    {
+                        @Html.PagedListPager((IPagedList)Model.Agents, page => Url.Action("Index", "OurAgents", new { page, sort = Model.Sort }), option)
+                    }
+                </div>
+                <div class="col-md-6" style="margin-top:10px">
+                     <b>Sort by:</b>
+                    <span class="sortCmd" style="display:@(Model.Sort == "d" ? "none" : "inline")">@Html.ActionLink("Default", "Index", new { page = 1, sort = "d" })</span> 
+                    <span class="sortCmd" style="display:@(Model.Sort == "d" ? "inline" : "none")">Default</span> 
+                    <span class="sortCmd" style="display:@(Model.Sort == "l" ? "none" : "inline")">@Html.ActionLink("Last name", "Index", new { page = 1, sort = "l" })</span> 
+                    <span class="sortCmd" style="display:@(Model.Sort == "l" ? "inline" : "none")">Last name</span> 
+                    <span class="sortCmd" style="display:@(Model.Sort == "f" ? "none" : "inline")">@Html.ActionLink("First name", "Index", new { page = 1, sort = "f" })</span> 
+                    <span class="sortCmd" style="display:@(Model.Sort == "f" ? "inline" : "none")">First name</span> 
+                </div>               
+            </div>
+       </div>
+      </div>
+

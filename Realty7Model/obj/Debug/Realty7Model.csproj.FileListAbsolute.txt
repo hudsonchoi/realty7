@@ -1,0 +1,10 @@
+D:\Project\Realty7\Realty7Model\bin\Debug\Realty7Model.dll
+D:\Project\Realty7\Realty7Model\bin\Debug\Realty7Model.dll.config
+D:\Project\Realty7\Realty7Model\bin\Debug\EntityFramework.dll
+D:\Project\Realty7\Realty7Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\Realty7\Realty7Model\bin\Debug\EntityFramework.xml
+D:\Project\Realty7\Realty7Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\Realty7\Realty7Model\obj\Debug\Realty7Model.dll
+D:\Project\Realty7\Realty7Model\obj\Debug\Realty7Model.pdb
+D:\Project\Realty7\Realty7Model\bin\Debug\Realty7Model.pdb
+D:\Project\Realty7\Realty7Model\obj\Debug\Realty7Model.csprojResolveAssemblyReference.cache

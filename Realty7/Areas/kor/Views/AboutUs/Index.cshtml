@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Realty 7 LLC :: About Us";
+    Layout = "~/Views/Shared/_LayoutKor.cshtml";
+}
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#about-us").addClass("active");
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $("#banner").hide();
+            $("#pc-menu").hide();
+        } else {
+            $("#mobile-menu").hide();
+            $("#mobile-banner").hide();
+        }
+    });
+</script>
+<style>
+#mobile-banner {
+    width: 100%;
+    height: auto;
+}
+</style>
+<embed name="banner" width="940" height="229" id="banner" src="/Content/flash/banner4.swf" type="application/x-shockwave-flash" wmode="transparent" quality="high" bgcolor="#ffffff">
+<img id="mobile-banner" src="~/Content/images/bannerAboutUs.png" />
+      <div class="row">
+        <div class="col-md-3" style="text-align:center; border-right-style:solid; border-right-width:1px" id="pc-menu">
+                    <br />
+            @Html.ActionLink("Realty 7 에이젼트 보기", "Index", "OurAgents", new { area = "kor" }, null)
+            <br /><br /><br /><br /><br /><br /><br /><br />
+       </div>
+        <div class="col-md-9">
+     
+<h2>부동산에 관한 도움이 필요하십니까?</h2>
+
+<p>Relaty 7의 유능한 에이젼트 들이 도와 드리겠습니다. </p>
+
+<p>Realty 7 에 오신것을 환영합니다. Realty7 은 20년 이상된 베테랑 Agent 3명이 2005년 4월에 설립한 한인 부동산 회사 입니다. Realty 7 은 Fort Lee, 버겐카운티를 중심으로한 뉴져지와 뉴욕 지역을 서비스 하고 있습니다. Realty7 은 130여 명의 Agent 가 일하고 있는 명실공히 미동부 최대의 한인 부동산 회사입니다. Realty 7은 주택, 상용, 비지니스 매매 및 투자와 관리 대행을 해드리고 있습니다. 더 궁금하신 점이 있으시면 저희에게 연락 주십시요. 감사합니다. </p>
+
+        </div>
+      </div>
+
+    <div class="row" id="mobile-menu" style="text-align:center">
+        <div class="col-md-12">
+            <img src="~/Content/images/eng/contactus.jpg" />
+        </div>
+    </div>

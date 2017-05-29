@@ -1,0 +1,156 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+/*!
+ * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.business-header {
+    height: 400px;
+    /*background: url('http://placehold.it/1920x400') center center no-repeat scroll;*/
+    background: url('/Content/images/home.png') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+.tagline {
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+footer {
+    margin: 20px 0;
+}
+
+.imgDiv {
+    float:left;
+    padding:5px;
+}
+
+.imgDiv img{
+    margin-top:10px;
+    border: 1px solid #ccc;
+    background: #ffffff;
+    padding:3px;
+    border: solid 1px #CCC; -moz-box-shadow: 3px 3px 0px #c9c9c9; -webkit-box-shadow: 3px 3px 0px #c9c9c9; box-shadow: 3px 3px 0px #c9c9c9;
+}
+.contactDiv {
+    margin-top:10px;
+    padding:40px 0px 10px 7px ;
+   float:left;
+   font-size:12px;
+}
+
+.contactMobileDiv {
+   padding:15px 0px 10px 7px ;
+   float:left;
+   font-size:12px;
+}
+
+.photoBorder {
+    /*border:dotted;
+    border-width:1px;*/
+}
+
+.nav {
+    font-weight: bold;
+}
+
+.sortCmd {
+    padding-left:10px;
+}
+
+.required {
+    margin-left:2px;
+    font-size:18px;
+    font-weight:bold;
+    color:red;
+}
+
+.thanks {
+    font-weight:bold;
+    color:#009f00;
+}
+
+.TownInfo {
+    border: 1px solid #999999;
+    background: #e4ebf0;
+    padding:5px;
+    text-align:center;
+    width:290px;
+    font-size:12px;
+}

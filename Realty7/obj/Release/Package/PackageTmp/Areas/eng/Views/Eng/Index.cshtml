@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Realty 7 LLC";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $(function () {
+        $("#home").addClass("active");
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $("#banner").hide();
+            $("#pc-menu").hide();
+        } else {
+            $("#mobile-menu").hide();
+            $("#mobile-banner").hide();
+        }
+    });
+
+
+</script>
+<style>
+#mobile-banner {
+    width: 100%;
+    height: auto;
+}
+</style>
+<embed name="banner" width="940" height="229" id="banner" src="/Content/flash/banner.swf" type="application/x-shockwave-flash" wmode="transparent" quality="high" bgcolor="#ffffff"/>
+<img id="mobile-banner" src="~/Content/images/bannerHome.png" />
+      <div class="row">
+
+        <div class="col-md-3" style="text-align:center; border-right-style:solid; border-right-width:1px" id="pc-menu">
+            <a href="http://www.njmls.com/communities/" target="_blank"><img src="~/Content/images/eng/ico_buyer.gif" /></a><br />
+            <a href="https://education.state.nj.us/directory/" target="_blank"><img src="~/Content/images/eng/ico_sellers.gif" /></a><br />
+            <a href="/Eng/OurAgents"><img src="~/Content/images/eng/contactus.jpg" /></a>
+       </div>
+        <div class="col-md-9">
+            <h2>Welcome to Realty 7!</h2>
+From sales and rental of residential single family home, condominium, cooperative to commercial buildings, warehouse along with businesses, Realty 7 will be there every step of the way to provide level of service that will exceed your expectation. Give us a call and find out what a true meaning of service is all about! 
+
+        </div>
+      </div>
+
+    <div class="row" id="mobile-menu" style="text-align:center">
+        <div class="col-md-3">
+            <a href="http://www.njmls.com/communities/" target="_blank"><img src="~/Content/images/eng/ico_buyer.gif" /></a>
+        </div>
+        <div class="col-md-3">
+           <a href="https://education.state.nj.us/directory/" target="_blank"><img src="~/Content/images/eng/ico_sellers.gif" /></a>
+        </div>
+        <div class="col-md-3">
+            <a href="/Eng/OurAgents"><img src="~/Content/images/eng/contactus.jpg" /></a>
+        </div>
+    </div>
+
+

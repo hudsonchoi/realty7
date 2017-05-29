@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="뉴저지 부동산, 뉴저지,부동산,new jersey,real estate,real,estate,agent,rent,home,house,apartment,bergen county" />
+    <meta name="description" content="뉴저지 부동산 전문인 Realty 7 New Jersey real estate agent house apartment Bergen county" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")   
+    <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/bootstrap/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+        <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li id="home">@Html.ActionLink("홈 페이지", "Index", "Kor", new { area = "kor"}, null)</li>
+            <li id="about-us">@Html.ActionLink("회사 소개", "Index", "AboutUs", new { area= "kor" }, null)</li>
+               <li id="our-agents">@Html.ActionLink("에이전트 소개", "Index", "OurAgents", new { area = "kor" }, null)</li>
+            <li id="search-property">@Html.ActionLink("매물 검색", "Index", "SearchProperty", new { area = "kor" }, null)</li>
+            <li id="town-info">@Html.ActionLink("타운/학군 소개", "Index", "TownInfo", new { area = "kor" }, null)</li>
+            <li id="qa">@Html.ActionLink("질문과 답변", "Index", "QA", new { area = "kor" }, null)</li> 
+            <li id="contacts">@Html.ActionLink("회사 연락처", "Index", "Contacts", new { area = "kor" }, null)</li>
+@*           
+            <li id="search-property">@Html.ActionLink("Search Property", "Index", "SearchProperty", new { area = "eng" }, null)</li>
+            <li id="town-info">@Html.ActionLink("Town Info", "Index", "TownInfo", new { area = "eng" }, null)</li>
+              <li id="qa">@Html.ActionLink("Q/A", "Index", "QA", new { area = "eng" }, null)</li> 
+              <li id="contacts">@Html.ActionLink("Contacts", "Index", "Contacts", new { area = "eng" }, null)</li>*@
+          </ul>
+          <ul class="nav navbar-nav navbar-right" style="margin-right:0px">
+            <li class="active"><a href="/kor">한국어</a></li>
+            <li><a href="/eng">English</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+@*      <div class="jumbotron">*@
+             @RenderBody()
+      @*</div>*@
+
+    </div> <!-- /container -->
+   <footer class="footer">
+      <div class="container" style="background-color:#e8e7e7; text-align:center;max-width:940px">
+           <div class="row">
+                 <div class="col-md-6" style="text-align:left; float:left; padding-top:13px">
+                    &copy; 2016 <b>Realty 7 LLC</b> All Rights Reserved
+                </div>
+                <div  class="col-md-6" style="float:left; text-align:right">
+                    <img src="~/Content/images/logos.gif" />
+                </div>
+
+            </div>
+@*             <div style="background-color:#0070c0;width:100%; text-align:center; color:white"></div>*@
+@*        <p class="text-muted">Y.J. Packaging & Delivery Inc.</p>*@
+      </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

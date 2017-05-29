@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Realty 7 LLC";
+    Layout = "~/Views/Shared/_LayoutKor.cshtml";
+}
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#home").addClass("active");
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $("#banner").hide();
+            $("#pc-menu").hide();
+        } else {
+            $("#mobile-menu").hide();
+            $("#mobile-banner").hide();
+        }
+    });
+
+
+</script>
+<style>
+#mobile-banner {
+    width: 100%;
+    height: auto;
+}
+</style>
+<embed name="banner" width="940" height="229" id="banner" src="/Content/flash/banner.swf" type="application/x-shockwave-flash" wmode="transparent" quality="high" bgcolor="#ffffff"/>
+<img id="mobile-banner" src="~/Content/images/bannerHome.png" />
+      <div class="row">
+
+        <div class="col-md-3" style="text-align:center; border-right-style:solid; border-right-width:1px" id="pc-menu">
+            <a href="http://www.njmls.com/communities/" target="_blank"><img src="~/Content/images/kor/town.png" /></a><br />
+            <a href="https://education.state.nj.us/directory/" target="_blank"><img src="~/Content/images/kor/school.png" /></a><br />
+            <a href="/Kor/OurAgents"><img src="~/Content/images/kor/agents.png" /></a><br />
+       </div>
+        <div class="col-md-9">
+            <h2>Realty 7 에 오신것을 환영합니다!</h2>
+Realty 7 은 Fort Lee, 버겐카운티를 중심으로 한 뉴져지와 뉴욕 지역을 서비스 하고 있습니다. Realty7 은 현재 130여 명의 Agent 가 일하고 있는 명실공히 미동부 최대의 한인 부동산 회사입니다. Realty 7은 주택, 상용, 비지니스 매매 및 투자와 관리 대행을 해드리고 있습니다. 더 궁금하신 점이 있으시면 저희에게 연락 주십시요. 감사합니다. 
+
+        </div>
+
+      </div>
+
+    <div class="row" id="mobile-menu" style="text-align:center">
+        <div class="col-md-3">
+            <a href="http://www.njmls.com/communities/" target="_blank"><img src="~/Content/images/kor/town.png" /></a>
+        </div>
+        <div class="col-md-3">
+            <a href="https://education.state.nj.us/directory/" target="_blank"><img src="~/Content/images/kor/school.png" /></a>
+        </div>
+        <div class="col-md-3">
+            <a href="/Kor/OurAgents"><img src="~/Content/images/kor/agents.png" /></a>
+        </div>
+    </div>
+
+
