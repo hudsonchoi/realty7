@@ -106,7 +106,7 @@ footer {
     border: 1px solid #ccc;
     background: #ffffff;
     padding:3px;
-    border: solid 1px #CCC; -moz-box-shadow: 3px 3px 0px #c9c9c9; -webkit-box-shadow: 3px 3px 0px #c9c9c9; box-shadow: 3px 3px 0px #c9c9c9;
+    border: solid 1px #CCC; -moz-box-shadow: 3px 3px 0px #dddddd; -webkit-box-shadow: 3px 3px 0px #dddddd; box-shadow: 3px 3px 0px #dddddd;
 }
 .contactDiv {
     margin-top:10px;
@@ -116,6 +116,7 @@ footer {
 }
 
 .contactMobileDiv {
+    margin-top:30px;
    padding:15px 0px 10px 7px ;
    float:left;
    font-size:12px;

@@ -74,13 +74,12 @@
             @foreach (var a in Model.Agents)
             {
                  <div class="col-md-6 photoBorder">
-                    <div style="clear:both">
+                    <div style="clear:both; min-height:128px; min-width:350px">
                         <div class="imgDiv" style="margin-bottom:-10px">
                             <img src="~/Content/images/agents/@a.Image" onerror="this.onerror=null;this.src='/Content/images/agents/noimage.jpg'" />
                         </div>
                         <div>
                             <b>@a.FirstName @a.LastName</b><br />
-                            Direct: @a.Office<br />
                             Cell: @a.Cell<br />
                             Email: <a href="mailto:@a.Email">@a.Email</a>
                         </div>
