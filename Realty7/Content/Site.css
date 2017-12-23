@@ -131,6 +131,19 @@ footer {
     font-weight: bold;
 }
 
+.navbar > .container > .navbar-header > .navbar-brand {
+  background: url(../Content/images/Realty7.png) no-repeat;
+  background-size: 215px 80px;
+  height: 80px;
+  width: 215px;
+  margin-left: 25px; }
+  @media (max-width: 767px) {
+    .navbar > .container > .navbar-header > .navbar-brand {
+      height: 60px;
+      width: 161px;
+      background-size: 161px 60px; } 
+}
+
 .sortCmd {
     padding-left:10px;
 }
