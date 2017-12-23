@@ -17,7 +17,7 @@
 
 
         <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
             <a href="@Url.Action("Index", "Kor", new { area = "kor" },null)" class="navbar-brand"></a>
@@ -61,10 +61,10 @@
 
     </div> <!-- /container -->
    <footer class="footer">
-      <div class="container" style="background-color:#e8e7e7; text-align:center;max-width:940px">
+      <div class="container">
            <div class="row">
-                 <div class="col-md-6" style="text-align:left; float:left; padding-top:13px">
-                    &copy; 2016 <b>Realty 7 LLC</b> All Rights Reserved
+                 <div class="col-md-6" style="text-align:left; float:left; padding-top:13px; padding-left:30px">
+                    &copy; @DateTime.Now.Year <b>Realty 7 LLC</b> All Rights Reserved
                 </div>
                 <div  class="col-md-6" style="float:left; text-align:right">
                     <img src="~/Content/images/logos.gif" />
