@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -161,6 +162,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap\css\bootstrap-theme.css" />
     <Content Include="Content\bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
@@ -338,6 +340,7 @@
     <Content Include="Content\images\kor\school.png" />
     <Content Include="Content\images\kor\town.png" />
     <Content Include="Content\images\logos.gif" />
+    <Content Include="Content\images\main.jpg" />
     <Content Include="Content\images\NJMLS.png" />
     <Content Include="Content\images\njt.gif" />
     <Content Include="Content\images\port.gif" />
@@ -345,6 +348,7 @@
     <Content Include="Content\images\school2.gif" />
     <Content Include="Content\images\SplashLogo.png" />
     <Content Include="Content\justified-nav.css" />
+    <Content Include="Content\main.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
