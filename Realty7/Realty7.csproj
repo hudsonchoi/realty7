@@ -175,6 +175,7 @@
     <Content Include="Content\flash\banner.swf" />
     <Content Include="Content\flash\banner4.swf" />
     <Content Include="Content\flash\intro.swf" />
+    <Content Include="Content\images\AboutUs.jpg" />
     <Content Include="Content\images\agents\1165267103.jpg" />
     <Content Include="Content\images\agents\1172969897.jpg" />
     <Content Include="Content\images\agents\1172972234.jpg" />

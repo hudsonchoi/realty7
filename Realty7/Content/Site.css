@@ -252,3 +252,86 @@ footer {
     -ms-transition: border-color 0.4s ease-in; }
     #main-page-carousel .btn:hover {
       border-color: white; }
+
+
+    .main-page-1 {
+  background-color: #ebebeb;
+  position: relative;
+  padding-bottom: 50px; }
+  .main-page-1 > span {
+    position: absolute;
+    top: -80px; }
+    @media (max-width: 767px) {
+      .main-page-1 > span {
+        top: -60px; } }
+
+.main-page-1-upper-panel {
+  padding-top: 0px;
+  position: relative;
+  min-height: calc(42vw + 80px); }
+
+.main-page-1-lower-panel {
+  padding: 0 15px;
+  margin-bottom: 50px; }
+
+.main-page-1-image-box {
+  background-size: contain;
+  height: 42vw;
+  width: 60vw;
+  position: absolute;
+  overflow: hidden;
+  left: 0; }
+  .main-page-1-image-box img {
+    width: 100%; }
+
+.main-page-1-color-box {
+  background: #393980;
+  background: -webkit-linear-gradient(45deg, #454242, #454242);
+  background: -o-linear-gradient(45deg, #454242, #454242);
+  background: -moz-linear-gradient(45deg, #454242, #454242);
+  background: linear-gradient(45deg, #454242, #454242);
+  min-height: 18vw;
+  width: 48vw;
+  opacity: 0.8;
+  position: absolute;
+  margin-top: 5vw;
+  z-index: 10;
+  right: 55px;
+  color:white;
+}
+
+@media (max-width: 767px) {
+  .main-page-1 {
+    background-color: white;
+    position: relative;
+    padding-bottom: 50px;
+    width: 100vw; }
+  .main-page-1-upper-panel {
+    padding-top: 0;
+    position: relative;
+    min-height: 0; }
+  .main-page-1-lower-panel {
+    padding: 0 15px;
+    position: relative;
+    margin: 0 0 20px; }
+  .main-page-1-image-box {
+    background-size: contain;
+    height: auto;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    top: 0; }
+  .main-page-1-color-box {
+    background: #393980;
+    background: -webkit-linear-gradient(45deg, #454242, #454242);
+    background: -o-linear-gradient(45deg, #454242, #454242);
+    background: -moz-linear-gradient(45deg, #454242, #454242);
+    background: linear-gradient(45deg, #454242, #454242);
+    min-height: 0;
+    width: 90vw;
+    opacity: 0.8;
+    position: relative;
+    left: 5vw;
+    z-index: 10;
+    top: -50px;
+    margin: 0; } }

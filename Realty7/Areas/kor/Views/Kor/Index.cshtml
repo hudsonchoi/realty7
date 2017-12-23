@@ -2,28 +2,11 @@
     ViewBag.Title = "Realty 7 LLC";
     Layout = "~/Views/Shared/_LayoutKor.cshtml";
 }
-
-
 <script type="text/javascript">
     $(function () {
         $("#home").addClass("active");
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            $("#banner").hide();
-            $("#pc-menu").hide();
-        } else {
-            $("#mobile-menu").hide();
-            $("#mobile-banner").hide();
-        }
     });
-
-
 </script>
-<style>
-#mobile-banner {
-    width: 100%;
-    height: auto;
-}
-</style>
 <div style="margin-top:60px">
     <img src="~/Content/images/main.jpg" alt="Main Image" class="img-responsive animated fadeIn" />
     <div id="main-page-carousel" class="carousel slide" data-ride="carousel">
