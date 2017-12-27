@@ -21,42 +21,22 @@
     <style>
         html { height: 100%; overflow: hidden; }
         #intro { height: 100%; }
-        body { height: 100%; margin: 0px; padding: 0px; background-color: #d7e6f8; }
+        body { height: 100%; margin: 0px; padding: 0px }
     </style>
-    <script type="text/javascript">
-        $(function () {
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                $("#intro").hide();
-            } else {
-                $("#mobile").hide();
-            }
-        });
-</script>
 </head>
 
 <body>
-    <div class="row" id="mobile" >
-         <div class="col-md-12" style="text-align:center; padding:20px 0px">
-             <img src="~/Content/images/SplashLogo.png" />
+         <div class="row" style="text-align:center;padding:40px 20px 20px 20px">
+             <img src="~/Content/images/Realty7Splash.png"/>
          </div>
-         <div class="col-md-12" style="text-align:center;padding:20px 0px">
+         <div class="row" style="text-align:center;padding:20px 0px">
              <div style="margin-bottom:5px"><a href="/kor">한국어를 원하시면 클릭하세요</a></div>
              <div><a href="/kor"><img src="~/Content/images/Korean.png"/></a></div>
          </div>
-         <div class="col-md-12" style="text-align:center;padding:20px 0px">
+         <div class="row" style="text-align:center;padding:20px 0px">
              <div style="margin-bottom:5px"><a href="/eng">Please click here for English</a></div>
              <div><a href="/eng"><img src="~/Content/images/English.png"/></a></div>
          </div>
-    </div>
 
-    <div id="intro"></div>
-	    <script type="text/javascript">
-		    //var intro = new SWFObject("<?=FLASH?>intro.swf", "intro", "820", "474", "7", "#ffffff");
-		    var intro = new SWFObject("/Content/flash/intro.swf", "intro", "100%", "100%", "7", "#ffffff");
-		    intro.addParam("scale", "exactfit");
-		    intro.addVariable("korean","kor/");
-		    intro.addVariable("english","eng/");
-		    intro.write("intro");
-	    </script>
 </body>
 </html>
