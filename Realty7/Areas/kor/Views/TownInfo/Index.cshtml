@@ -7,6 +7,11 @@
 <script type="text/javascript">
     $(function () {
         $("#town-info").addClass("active");
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $("#pc-menu").hide();
+        } else {
+            $("#mobile-menu").hide();
+        }
     });
 </script>
 <style>
