@@ -175,6 +175,10 @@ footer {
     font-size:12px;
 }
 
+.main {
+    margin-top:80px;
+}
+
 #main-page-carousel {
   min-height: 26.666667vw;
   width: 40vw;
