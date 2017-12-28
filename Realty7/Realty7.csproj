@@ -176,6 +176,7 @@
     <Content Include="Content\flash\banner4.swf" />
     <Content Include="Content\flash\intro.swf" />
     <Content Include="Content\images\AboutUs.jpg" />
+    <Content Include="Content\images\agents.jpg" />
     <Content Include="Content\images\agents\1165267103.jpg" />
     <Content Include="Content\images\agents\1172969897.jpg" />
     <Content Include="Content\images\agents\1172972234.jpg" />
@@ -330,11 +331,13 @@
     <Content Include="Content\images\agents\noimage.jpg" />
     <Content Include="Content\images\bannerAboutUs.png" />
     <Content Include="Content\images\bannerHome.png" />
+    <Content Include="Content\images\contact.jpg" />
     <Content Include="Content\images\English.png" />
     <Content Include="Content\images\eng\contactus.jpg" />
     <Content Include="Content\images\eng\ico_buyer.gif" />
     <Content Include="Content\images\eng\ico_info.gif" />
     <Content Include="Content\images\eng\ico_sellers.gif" />
+    <Content Include="Content\images\info.jpg" />
     <Content Include="Content\images\Korean.png" />
     <Content Include="Content\images\kor\agents.png" />
     <Content Include="Content\images\kor\condo.png" />
@@ -345,9 +348,12 @@
     <Content Include="Content\images\NJMLS.png" />
     <Content Include="Content\images\njt.gif" />
     <Content Include="Content\images\port.gif" />
+    <Content Include="Content\images\qa.jpg" />
     <Content Include="Content\images\Realty7.png" />
+    <Content Include="Content\images\Realty7Splash.png" />
     <Content Include="Content\images\school1.gif" />
     <Content Include="Content\images\school2.gif" />
+    <Content Include="Content\images\search.jpg" />
     <Content Include="Content\images\SplashLogo.png" />
     <Content Include="Content\justified-nav.css" />
     <Content Include="Content\main.css" />
