@@ -14,66 +14,64 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-
-        <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="@Url.Action("Index", "Kor", new { area = "kor" },null)" class="navbar-brand"></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li id="home">@Html.ActionLink("Home", "Index", "Eng", new { area = "eng" }, null)</li>
+                    <li id="about-us">@Html.ActionLink("About Us", "Index", "AboutUs", new { area = "eng" }, null)</li>
+                    <li id="our-agents">@Html.ActionLink("Our Agents", "Index", "OurAgents", new { area = "eng" }, null)</li>
+                    <li id="search-property">@Html.ActionLink("Search Property", "Index", "SearchProperty", new { area = "eng" }, null)</li>
+                    <li id="town-info">@Html.ActionLink("Town Info", "Index", "TownInfo", new { area = "eng" }, null)</li>
+                    <li id="qa">@Html.ActionLink("Q/A", "Index", "QA", new { area = "eng" }, null)</li>
+                    <li id="contacts">@Html.ActionLink("Contacts", "Index", "Contacts", new { area = "eng" }, null)</li>                    @*
+                        <li id="search-property">@Html.ActionLink("Search Property", "Index", "SearchProperty", new { area = "eng" }, null)</li>
+                        <li id="town-info">@Html.ActionLink("Town Info", "Index", "TownInfo", new { area = "eng" }, null)</li>
+                          <li id="qa">@Html.ActionLink("Q/A", "Index", "QA", new { area = "eng" }, null)</li>
+                          <li id="contacts">@Html.ActionLink("Contacts", "Index", "Contacts", new { area = "eng" }, null)</li>*@
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right:0px">
+                    <li><a href="/kor">한국어</a></li>
+                    <li class="active"><a href="/eng">English</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li id="home">@Html.ActionLink("Home", "Index", "Eng", new { area = "eng"}, null)</li>
-            <li id="about-us">@Html.ActionLink("About Us", "Index", "AboutUs", new { area= "eng" }, null)</li>
-            <li id="our-agents">@Html.ActionLink("Our Agents", "Index", "OurAgents", new { area = "eng" }, null)</li>
-            <li id="search-property">@Html.ActionLink("Search Property", "Index", "SearchProperty", new { area = "eng" }, null)</li>
-            <li id="town-info">@Html.ActionLink("Town Info", "Index", "TownInfo", new { area = "eng" }, null)</li>
-            <li id="qa">@Html.ActionLink("Q/A", "Index", "QA", new { area = "eng" }, null)</li> 
-            <li id="contacts">@Html.ActionLink("Contacts", "Index", "Contacts", new { area = "eng" }, null)</li>
-@*           
-            <li id="search-property">@Html.ActionLink("Search Property", "Index", "SearchProperty", new { area = "eng" }, null)</li>
-            <li id="town-info">@Html.ActionLink("Town Info", "Index", "TownInfo", new { area = "eng" }, null)</li>
-              <li id="qa">@Html.ActionLink("Q/A", "Index", "QA", new { area = "eng" }, null)</li> 
-              <li id="contacts">@Html.ActionLink("Contacts", "Index", "Contacts", new { area = "eng" }, null)</li>*@
-          </ul>
-          <ul class="nav navbar-nav navbar-right" style="margin-right:0px">
-            <li><a href="/kor">한국어</a></li>
-            <li class="active"><a href="/eng">English</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
     </nav>
 
 
     <div class="container">
 
-      <!-- Main component for a primary marketing message or call to action -->
-@*      <div class="jumbotron">*@
-             @RenderBody()
-      @*</div>*@
-   <footer class="footer">
-      <div class="container" style="background-color:#e8e7e7; text-align:center; max-width:940px">
-           <div class="row">
-                 <div class="col-md-6" style="text-align:left; float:left; padding-top:13px">
-                    &copy; 2016 <b>Realty 7 LLC</b> All Rights Reserved
+        <!-- Main component for a primary marketing message or call to action -->
+        @*      <div class="jumbotron">*@
+        @RenderBody()
+        @*</div>*@
+
+    </div> <!-- /container -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="text-align:left; float:left; padding-top:13px; padding-left:30px">
+                    &copy; @DateTime.Now.Year <b>Realty 7 LLC</b> All Rights Reserved
                 </div>
-                <div  class="col-md-6" style="float:left; text-align:right">
+                <div class="col-md-6" style="float:left; text-align:right">
                     <img src="~/Content/images/logos.gif" />
                 </div>
 
             </div>
-@*             <div style="background-color:#0070c0;width:100%; text-align:center; color:white"></div>*@
-@*        <p class="text-muted">Y.J. Packaging & Delivery Inc.</p>*@
-      </div>
+            @*             <div style="background-color:#0070c0;width:100%; text-align:center; color:white"></div>*@
+            @*        <p class="text-muted">Y.J. Packaging & Delivery Inc.</p>*@
+        </div>
     </footer>
-    </div> <!-- /container -->
-
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)

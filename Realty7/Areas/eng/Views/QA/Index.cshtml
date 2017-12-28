@@ -2,16 +2,10 @@
     ViewBag.Title = "Realty 7 LLC :: Q/A";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <script type="text/javascript">
     $(function () {
         $("#qa").addClass("active");
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            $("#banner").hide();
-            $("#pc-menu").hide();
-        } else {
-            $("#mobile-menu").hide();
-            $("#mobile-banner").hide();
-        }
     });
 </script>
 <script src="~/Scripts/validator.js"></script>
@@ -22,59 +16,59 @@
     }
 
     .side-menu {
-        margin:10px 10px 10px 50px;
+        margin: 10px 10px 10px 50px;
     }
 
     textarea {
-    width : 350px;
-    height : 150px;
-}
+        width: 350px;
+        height: 150px;
+    }
 </style>
-<embed name="banner" width="940" height="229" id="banner" src="/Content/flash/banner.swf" type="application/x-shockwave-flash" wmode="transparent" quality="high" bgcolor="#ffffff"/>
-<img id="mobile-banner" src="~/Content/images/bannerHome.png" />
+<div class="main">
+    <img id="mobile-banner" src="~/Content/images/qa.jpg" class="img-responsive animated fadeIn" />
+    <div class="row">
 
-      <div class="row">
-
-      <div class="col-md-3" id="pc-menu">
-            <div class="side-menu">@Html.ActionLink("Realty 7 Agents", "Index", "OurAgents", new { area = "eng" }, null)</div>
-       </div>
-        <div class="col-md-9" style="margin-top:10px">      
-            <div class="col-md-6" style="margin-top:10px">
+        <div class="col-md-3" id="pc-menu">
+            <div class="side-menu">@Html.ActionLink("Realty 7 에이젼트 보기", "Index", "OurAgents", new { area = "kor" }, null)</div>
+        </div>
+        <div class="col-md-9" style="margin-top:10px">
+            <div class="col-md-12" style="margin-top:10px">
                 <b>Realty 7 LLC (Fort Lee Office)</b><br />
                 2160 North Central Rd. Suite 207<br />
                 Fort Lee, NJ 07024<br />
                 Office: 201-292-7777<br />
                 Fax: 201-482-0423<br />
-                Email: jamesleerealty7@gmail.com 
-            </div>    
+                Email: jamesleerealty7@gmail.com
+                <br /><br />Please contact us if you have any questions or comments. <br /><br />
+            </div>
             <div class="col-md-12" style="margin-top:15px">
                 <span class="thanks">@ViewBag.Message&nbsp;</span>
             </div>
-            <div class="col-md-12" style="margin-bottom:10px">
-                Please contact us if you have any questions or comments.
-            </div>
-            @using (Html.BeginForm(null, null, FormMethod.Post, new { name = "contact_form", id = "contact_form" }))
-            {
-                <div class="col-md-3">First Name</div><div class="col-md-9">@Html.TextBox("FirstName")<span class="required">*</span></div>
+            <div class="col-md-12">
+                @using (Html.BeginForm(null, null, FormMethod.Post, new { name = "contact_form", id = "contact_form" }))
+                { <div class="col-md-3">First Name</div><div class="col-md-9">@Html.TextBox("FirstName")<span class="required">*</span></div>
                 <div class="col-md-3" style="margin-top:2px">Last Name</div><div class="col-md-9" style="margin-top:2px">@Html.TextBox("LastName")<span class="required">*</span></div>
                 <div class="col-md-3" style="margin-top:2px">Email Address</div><div class="col-md-9" style="margin-top:2px">@Html.TextBox("Email")<span class="required">*</span></div>
                 <div class="col-md-3" style="margin-top:2px">Phone Number</div><div class="col-md-9" style="margin-top:2px">@Html.TextBox("Phone")<span class="required">*</span></div>
                 <div class="col-md-3" style="margin-top:10px">Your questions or comments</div><div class="col-md-9" style="margin-top:10px">@Html.TextArea("Comments")</div>
                 <div class="col-md-3" style="margin-top:10px">&nbsp;</div><div class="col-md-9" style="margin-top:10px"><input type="submit" /></div>
-            }
-            <script language="JavaScript" type="text/javascript">
-            		var chk = new Validator("contact_form");
-            		chk.addValidation("FirstName", "req", "Please enter your first name");
-            		chk.addValidation("LastName", "req", "Please enter you last name");
-            		chk.addValidation("Email", "req", "Please enter your email");
-            		chk.addValidation("Email", "email", "Please enter a valid email");
-            		chk.addValidation("Phone", "req", "Please enter your phone number");
-			</script>
-            <div class="col-md-12" style="margin-top:10px">
-                Your privacy is important to us. Your information will not be sold or exchanged with anyone else. All information you provide will be kept strictly confidential. 
+                }
             </div>
-      </div>
-     </div>
+            <script language="JavaScript" type="text/javascript">
+                var chk = new Validator("contact_form");
+                chk.addValidation("FirstName", "req", "Please enter your first name");
+                chk.addValidation("LastName", "req", "Please enter you last name");
+                chk.addValidation("Email", "req", "Please enter your email");
+                chk.addValidation("Email", "email", "Please enter a valid email");
+                chk.addValidation("Phone", "req", "Please enter your phone number");
+            </script>
+            <div class="col-md-12" style="margin-top:10px">
+                Your privacy is important to us. Your information will not be sold or exchanged with anyone else. All information you provide will be kept strictly confidential.
+            </div>
+        </div>
+
+    </div>
+</div>
   
 
 
