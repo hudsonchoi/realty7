@@ -44,7 +44,7 @@ namespace Realty7.Areas.eng.Controllers
                     mail.To.Add(to);
                     mail.Subject = subject;
                     mail.Body = msg.ToString();
-                    SmtpServer.Port = 587;
+                    SmtpServer.Port = 25;
                     SmtpServer.Credentials = new System.Net.NetworkCredential("info@sonyachoi.com", "sunhwa1986");
                     //SmtpServer.EnableSsl = true;
                     SmtpServer.Send(mail);
