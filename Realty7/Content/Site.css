@@ -183,8 +183,8 @@ footer {
   min-height: 26.666667vw;
   width: 40vw;
   position: absolute;
-  top: 35vw;
-  right: 10vw; }
+  top: 40vw;
+  right: 0vw; }
   @media (max-width: 767px) {
     #main-page-carousel {
       width: 100vw;
@@ -202,7 +202,7 @@ footer {
     background: linear-gradient(45deg, #454242, #454242);
     min-height: 20vw;
     width: 40vw;
-    opacity: 0.7;
+    opacity: 0.8;
     color:white
   }
     @media (max-width: 767px) {
@@ -298,7 +298,7 @@ footer {
   width: 48vw;
   opacity: 0.8;
   position: absolute;
-  margin-top: 5vw;
+  margin-top: 18vw;
   z-index: 10;
   right: 55px;
   color:white;
