@@ -345,6 +345,8 @@
     <Content Include="Content\images\kor\town.png" />
     <Content Include="Content\images\logos.gif" />
     <Content Include="Content\images\main.jpg" />
+    <Content Include="Content\images\main2.jpg" />
+    <Content Include="Content\images\main3.jpg" />
     <Content Include="Content\images\NJMLS.png" />
     <Content Include="Content\images\njt.gif" />
     <Content Include="Content\images\port.gif" />

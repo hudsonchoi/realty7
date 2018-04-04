@@ -5,6 +5,14 @@
 <script type="text/javascript">
     $(function () {
         $("#home").addClass("active");
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $("#mobile-div").show();
+            $("#video-div").hide();
+        } else {
+            $("#mobile-div").hide();
+            $("#video-div").show();
+            $("#footer-id").addClass("navbar-fixed-bottom");
+        }
     });
 </script>
 
@@ -27,26 +35,10 @@
         width: 100%;
         padding: 20px;
     }
-
-    /* Style the button used to pause/play the video */
-    #myBtn {
-        width: 200px;
-        font-size: 18px;
-        padding: 10px;
-        border: none;
-        background: #000;
-        color: #fff;
-        cursor: pointer;
-    }
-
-        #myBtn:hover {
-            background: #ddd;
-            color: black;
-        }
 </style>
 <!-- The video -->
 
-<div style="margin-top:60px">
+<div style="margin-top:60px" id="video-div">
     <video autoplay muted loop id="myVideo">
         <source src="/Content/Video/BigMovie.mp4" type="video/mp4">
     </video>
@@ -57,9 +49,8 @@
     </div>
 </div>
 
-
-@*<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" style="margin-top:60px">
-
+<div id="mobile-div" style="margin-top:60px">
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" >
     <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
         <li data-target="#carousel" data-slide-to="1"></li>
@@ -90,8 +81,8 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div>*@
-@*<div>
+</div>
+<div>
     <div id="main-page-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="item active">
@@ -104,4 +95,5 @@
             </div>
         </div>
     </div>
-</div>*@
+</div>
+</div>
