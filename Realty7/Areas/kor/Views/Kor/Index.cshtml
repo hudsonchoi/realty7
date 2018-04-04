@@ -11,7 +11,6 @@
         } else {
             $("#mobile-div").hide();
             $("#video-div").show();
-            $("#footer-id").addClass("navbar-fixed-bottom");
         }
     });
 </script>
@@ -19,7 +18,7 @@
 <style>
     /* Style the video: 100% width and height to cover the entire window */
     #myVideo {
-        position: fixed;
+        position: relative;
         right: 0;
         bottom: 0;
         min-width: 100%;
@@ -28,12 +27,12 @@
 
     /* Add some content at the bottom of the video/page */
     .content {
-        position: fixed;
-        bottom: 65px;
+        position:relative;
         background: rgba(0, 0, 0, 0.5);
         color: #f1f1f1;
         width: 100%;
         padding: 20px;
+        margin-top:-165px;
     }
 </style>
 <!-- The video -->
