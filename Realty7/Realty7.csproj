@@ -444,6 +444,8 @@
     <Content Include="Areas\kor\Views\Contacts\Index.cshtml" />
     <Content Include="Areas\kor\Views\TownInfo\Index.cshtml" />
     <Content Include="Areas\kor\Views\Transportation\Index.cshtml" />
+    <Content Include="font\NanumSquareRoundB.eot" />
+    <Content Include="font\NanumSquareRoundB.woff" />
     <None Include="Properties\PublishProfiles\Realty7.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
